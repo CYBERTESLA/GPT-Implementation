@@ -129,7 +129,7 @@ class Block(nn.Module):
 
     def forward(self, x):
         x = x + self.sa(self.ln1(x)) # Residual connection with Pre Normalization
-        x = x + self.ffwd(self.ln2(x)) # Residual connection with Pre Normalization
+        x = x + self.ffwd(self.ln2 (x)) # Residual connection with Pre Normalization
         return x
 
 # super simple bigram moel
